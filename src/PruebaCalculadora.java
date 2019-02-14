@@ -65,6 +65,13 @@ class VentanaCalculadora extends JFrame {
 			lblHistorial.setBounds(10, 50, 370, 20);
 			lblHistorial.setHorizontalAlignment(JLabel.RIGHT);
 		add(lblHistorial);
+		
+		lblPantalla=new JLabel("0");
+			lblPantalla.setFont(new Font("Arial", 0, 55));
+			lblPantalla.setBounds(10, 80, 370, 50);
+			lblPantalla.setHorizontalAlignment(JLabel.RIGHT);
+		add(lblPantalla);
+		
 	}
 	
 	
