@@ -113,14 +113,53 @@ class VentanaCalculadora extends JFrame {
 			btnDividir.setFont(new Font("Arial", 0, 30));
 			btnDividir.setBounds(295, 245, 90, 60);
 		add(btnDividir);
+		
+		btn7=new JButton("7");
+			btn7.setFont(new Font("Arial", 0, 30));
+			btn7.setBounds(10, 310, 90, 60);
+		add(btn7);
+		
+		btn8=new JButton("8");
+			btn8.setFont(new Font("Arial", 0, 30));
+			btn8.setBounds(105, 310, 90, 60);
+		add(btn8);
+	
+		btn9=new JButton("9");
+			btn9.setFont(new Font("Arial", 0, 30));
+			btn9.setBounds(200, 310, 90, 60);
+		add(btn9);
+		
+		btnMultiplicar=new JButton("*");
+			btnMultiplicar.setFont(new Font("Arial", 0, 30));
+			btnMultiplicar.setBounds(295, 310, 90, 60);
+		add(btnMultiplicar);
+		
+		
+		
+		
 	}
-	
-	
 }
 
 public class PruebaCalculadora {
 
 	public static void main(String[] args) {
+		try {
+			UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
+			//UIManager.setLookAndFeel("com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel");
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (InstantiationException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (UnsupportedLookAndFeelException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 		SwingUtilities.invokeLater(new Runnable() {
 			@Override
 			public void run() {
