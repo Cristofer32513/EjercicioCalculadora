@@ -1,4 +1,6 @@
 import javax.swing.*;
+import javax.swing.border.Border;
+
 import java.awt.*;
 
 class Calculadora{
@@ -55,7 +57,7 @@ class VentanaCalculadora extends JFrame {
 		setVisible(true);
 		
 		//Componentes
-		lblEstandar=new JLabel("Est�ndar");
+		lblEstandar=new JLabel("Estándar");
 			lblEstandar.setFont(new Font("Times New Roman", 0, 30));
 			lblEstandar.setBounds(20, 15, 120, 20);
 		add(lblEstandar);
@@ -71,6 +73,26 @@ class VentanaCalculadora extends JFrame {
 			lblPantalla.setBounds(10, 80, 370, 50);
 			lblPantalla.setHorizontalAlignment(JLabel.RIGHT);
 		add(lblPantalla);
+		
+		btnPorcentaje=new JButton(" % ");
+			btnPorcentaje.setFont(new Font("Arial", 0, 30));
+			btnPorcentaje.setBounds(10, 180, 90, 60);
+		add(btnPorcentaje);
+		
+		btnRaiz=new JButton(" √ ");
+			btnRaiz.setFont(new Font("Arial", 0, 30));
+			btnRaiz.setBounds(105, 180, 90, 60);
+		add(btnRaiz);
+	
+		btnAlCuadrado=new JButton("x^2");
+			btnAlCuadrado.setFont(new Font("Arial", 0, 30));
+			btnAlCuadrado.setBounds(200, 180, 90, 60);
+		add(btnAlCuadrado);
+		
+		btnUnoEntreX=new JButton("1/x");
+			btnUnoEntreX.setFont(new Font("Arial", 0, 30));
+			btnUnoEntreX.setBounds(295, 180, 90, 60);
+		add(btnUnoEntreX);
 		
 	}
 	
