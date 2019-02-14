@@ -154,6 +154,26 @@ class VentanaCalculadora extends JFrame {
 			btnRestar.setBounds(295, 375, 90, 60);
 		add(btnRestar);
 		
+		btn1=new JButton("1");
+			btn1.setFont(new Font("Arial", 0, 30));
+			btn1.setBounds(10, 440, 90, 60);
+		add(btn1);
+		
+		btn2=new JButton("2");
+			btn2.setFont(new Font("Arial", 0, 30));
+			btn2.setBounds(105, 440, 90, 60);
+		add(btn2);
+	
+		btn3=new JButton("3");
+			btn3.setFont(new Font("Arial", 0, 30));
+			btn3.setBounds(200, 440, 90, 60);
+		add(btn3);
+		
+		btnSumar=new JButton("+");
+			btnSumar.setFont(new Font("Arial", 0, 30));
+			btnSumar.setBounds(295, 440, 90, 60);
+		add(btnSumar);
+		
 		
 		
 		
