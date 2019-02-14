@@ -45,7 +45,7 @@ class VentanaCalculadora extends JFrame {
 	JButton btnPorcentaje, btnRaiz, btnAlCuadrado, btnUnoEntreX, btnCE, btnC, btnBorrar,
 		btnDividir, btnMultiplicar, btnRestar, btnSumar, btnIgual, btnPunto, btnMasMenos,
 		btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9;
-	
+	JButton btnMC, btnMR, btnMmas, btnMmenos, btnMS, btnMH;
 	
 	public VentanaCalculadora() {
 		//Configuracon de la ventana
@@ -63,20 +63,52 @@ class VentanaCalculadora extends JFrame {
 			lblEstandar.setBounds(20, 15, 120, 20);
 		add(lblEstandar);
 		
-		lblHistorial=new JLabel("1+1+1+1+1+1+1+1+1+1+1+1+1333333333333+1+1+1+1+1+1+2");
+		lblHistorial=new JLabel("1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+2");
 			lblHistorial.setFont(new Font("Times New Roman", 0, 15));
-			lblHistorial.setBounds(5, 50, 370, 20);
+			lblHistorial.setBounds(5, 45, 370, 20);
 			lblHistorial.setHorizontalAlignment(JLabel.RIGHT);
 		add(lblHistorial);
 		
 		txtFPantalla=new JTextField("0");
 			txtFPantalla.setFont(new Font("Arial", 0, 55));
-			txtFPantalla.setBounds(5, 80, 370, 50);
+			txtFPantalla.setBounds(5, 65, 370, 60);
 			txtFPantalla.setBorder(null);
 			txtFPantalla.setBackground(null);
 			txtFPantalla.setEditable(false);
 			txtFPantalla.setHorizontalAlignment(JTextField.RIGHT);
 		add(txtFPantalla);
+		
+		btnMC=new JButton("MC");
+			btnMC.setFont(new Font("Arial", 0, 14));
+			btnMC.setBounds(5, 145, 58, 30);
+		add(btnMC);
+		
+		btnMR=new JButton("MR");
+			btnMR.setFont(new Font("Arial", 0, 14));
+			btnMR.setBounds(68, 145, 58, 30);
+		add(btnMR);
+		
+		btnMmas=new JButton("M+");
+			btnMmas.setFont(new Font("Arial", 0, 14));
+			btnMmas.setBounds(132, 145, 58, 30);
+		add(btnMmas);
+		
+		btnMmenos=new JButton("M-");
+			btnMmenos.setFont(new Font("Arial", 0, 14));
+			btnMmenos.setBounds(195, 145, 58, 30);
+		add(btnMmenos);
+		
+		btnMS=new JButton("MS");
+			btnMS.setFont(new Font("Arial", 0, 14));
+			btnMS.setBounds(258, 145, 58, 30);
+		add(btnMS);
+		
+		btnMH=new JButton("M^");
+			btnMH.setFont(new Font("Arial", 0, 14));
+			btnMH.setBounds(322, 145, 58, 30);
+		add(btnMH);
+	
+		
 		
 		btnPorcentaje=new JButton("%");
 			btnPorcentaje.setFont(new Font("Arial", 0, 30));
