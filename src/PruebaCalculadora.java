@@ -74,12 +74,12 @@ class VentanaCalculadora extends JFrame {
 			lblPantalla.setHorizontalAlignment(JLabel.RIGHT);
 		add(lblPantalla);
 		
-		btnPorcentaje=new JButton(" % ");
+		btnPorcentaje=new JButton("%");
 			btnPorcentaje.setFont(new Font("Arial", 0, 30));
 			btnPorcentaje.setBounds(10, 180, 90, 60);
 		add(btnPorcentaje);
 		
-		btnRaiz=new JButton(" √ ");
+		btnRaiz=new JButton("√");
 			btnRaiz.setFont(new Font("Arial", 0, 30));
 			btnRaiz.setBounds(105, 180, 90, 60);
 		add(btnRaiz);
@@ -94,6 +94,25 @@ class VentanaCalculadora extends JFrame {
 			btnUnoEntreX.setBounds(295, 180, 90, 60);
 		add(btnUnoEntreX);
 		
+		btnCE=new JButton("CE");
+			btnCE.setFont(new Font("Arial", 0, 30));
+			btnCE.setBounds(10, 245, 90, 60);
+		add(btnCE);
+		
+		btnC=new JButton("C");
+			btnC.setFont(new Font("Arial", 0, 30));
+			btnC.setBounds(105, 245, 90, 60);
+		add(btnC);
+	
+		btnBorrar=new JButton("<-");
+			btnBorrar.setFont(new Font("Arial", 0, 30));
+			btnBorrar.setBounds(200, 245, 90, 60);
+		add(btnBorrar);
+		
+		btnDividir=new JButton("/");
+			btnDividir.setFont(new Font("Arial", 0, 30));
+			btnDividir.setBounds(295, 245, 90, 60);
+		add(btnDividir);
 	}
 	
 	
