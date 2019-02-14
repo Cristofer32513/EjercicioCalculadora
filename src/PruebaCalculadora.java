@@ -59,6 +59,12 @@ class VentanaCalculadora extends JFrame {
 			lblEstandar.setFont(new Font("Times New Roman", 0, 30));
 			lblEstandar.setBounds(20, 15, 120, 20);
 		add(lblEstandar);
+		
+		lblHistorial=new JLabel("1+1+1+1+1+1+1+1+1+1+1+1+1333333333333+1+1+1+1+1+1+2");
+			lblHistorial.setFont(new Font("Times New Roman", 0, 15));
+			lblHistorial.setBounds(10, 50, 370, 20);
+			lblHistorial.setHorizontalAlignment(JLabel.RIGHT);
+		add(lblHistorial);
 	}
 	
 	
