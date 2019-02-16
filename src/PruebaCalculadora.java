@@ -192,7 +192,26 @@ class VentanaCalculadora extends JFrame implements ActionListener {
 			btnDividir.setFont(new Font("Arial", 0, 30));
 			btnDividir.setBounds(290, 245, 90, 60);
 			btnDividir.setBackground(new Color(235, 235, 235));
-			btnDividir.addActionListener(this);
+			btnDividir.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent e) {
+					if(lblHistorial.getText().length()==0)
+						num1=1;
+					else
+						num1=Double.parseDouble(lblHistorial.getText());
+					
+					if(txtFPantalla.getText().length()==0)
+						num2=1;
+					else
+						num2=Double.parseDouble(txtFPantalla.getText());
+					
+					resultado=1;
+					resultado=resultado*num2;
+					txtFPantalla.setText("0");
+					lblHistorial.setText("");
+					operacionARealizar=4;
+				}
+			});
 		add(btnDividir);
 		
 		
