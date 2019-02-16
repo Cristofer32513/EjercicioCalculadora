@@ -179,13 +179,16 @@ class VentanaCalculadora extends JFrame implements ActionListener {
 			btnC.addActionListener(this);
 		add(btnC);
 	
-		
-		btnBorrar=new JButton("<-");
-			btnBorrar.setFont(new Font("Arial", 0, 30));
+		btnBorrar=new JButton("");
+			ImageIcon borrar=new ImageIcon("./src/Borrar.png");
+			ImageIcon borrarRed=new ImageIcon(borrar.getImage().getScaledInstance(45, 45, Image.SCALE_REPLICATE));
+			btnBorrar.setIcon(borrarRed);
 			btnBorrar.setBounds(195, 245, 90, 60);
 			btnBorrar.addActionListener(this);
 			btnBorrar.setBackground(new Color(235, 235, 235));
 		add(btnBorrar);
+		
+		
 		
 		
 		btnDividir=new JButton("\u00F7");
