@@ -96,7 +96,26 @@ class VentanaCalculadora extends JFrame implements ActionListener {
 			btnPorcentaje.setFont(new Font("Arial", 0, 30));
 			btnPorcentaje.setBounds(5, 180, 90, 60);
 			btnPorcentaje.setBackground(new Color(235, 235, 235));
-			btnPorcentaje.addActionListener(this);
+			btnPorcentaje.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent e) {
+					if(lblHistorial.getText().length()==0)
+						num1=1;
+					else
+						num1=Double.parseDouble(lblHistorial.getText());
+					
+					if(txtFPantalla.getText().length()==0)
+						num2=1;
+					else
+						num2=Double.parseDouble(txtFPantalla.getText());
+					
+					resultado=1;
+					resultado=resultado*num2;
+					txtFPantalla.setText("0");
+					lblHistorial.setText("");
+					operacionARealizar=5;
+				}
+			});
 		add(btnPorcentaje);
 		
 		
@@ -367,6 +386,8 @@ class VentanaCalculadora extends JFrame implements ActionListener {
 						resultado=resultado*num2;
 					else if(operacionARealizar == 4)
 						resultado=resultado/num2;
+					else if(operacionARealizar == 5)
+						resultado=resultado*(num2/100);
 					
 					txtFPantalla.setText(String.valueOf(resultado));
 					lblHistorial.setText("");
