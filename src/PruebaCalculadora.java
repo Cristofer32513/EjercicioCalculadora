@@ -60,6 +60,7 @@ class VentanaCalculadora extends JFrame implements ActionListener {
 		setResizable(false);
 		setTitle("Calculadora");
 		setVisible(true);
+		setBackground(new Color(222, 222, 222));
 		
 		//Componentes
 		lblEstandar=new JLabel("Estándar");
@@ -87,72 +88,84 @@ class VentanaCalculadora extends JFrame implements ActionListener {
 		btnMC=new JButton("MC");
 			btnMC.setFont(new Font("Arial", 0, 14));
 			btnMC.setBounds(5, 145, 58, 30);
+			btnMC.setBackground(new Color(222, 222, 222));
 		add(btnMC);
 		
 		
 		btnMR=new JButton("MR");
 			btnMR.setFont(new Font("Arial", 0, 14));
 			btnMR.setBounds(68, 145, 58, 30);
+			btnMR.setBackground(new Color(222, 222, 222));
 		add(btnMR);
 		
 		
 		btnMmas=new JButton("M+");
 			btnMmas.setFont(new Font("Arial", 0, 14));
 			btnMmas.setBounds(132, 145, 58, 30);
+			btnMmas.setBackground(new Color(222, 222, 222));
 		add(btnMmas);
 		
 		
 		btnMmenos=new JButton("M-");
 			btnMmenos.setFont(new Font("Arial", 0, 14));
 			btnMmenos.setBounds(195, 145, 58, 30);
+			btnMmenos.setBackground(new Color(222, 222, 222));
 		add(btnMmenos);
 		
 		
 		btnMS=new JButton("MS");
 			btnMS.setFont(new Font("Arial", 0, 14));
 			btnMS.setBounds(258, 145, 58, 30);
+			btnMS.setBackground(new Color(222, 222, 222));
 		add(btnMS);
 		
 		
 		btnMH=new JButton("M^");
 			btnMH.setFont(new Font("Arial", 0, 14));
 			btnMH.setBounds(322, 145, 58, 30);
+			btnMH.setBackground(new Color(222, 222, 222));
 		add(btnMH);
 			
 		
 		btnPorcentaje=new JButton("%");
 			btnPorcentaje.setFont(new Font("Arial", 0, 30));
 			btnPorcentaje.setBounds(5, 180, 90, 60);
+			btnPorcentaje.setBackground(new Color(235, 235, 235));
 		add(btnPorcentaje);
 		
 		
 		btnRaiz=new JButton("√");
 			btnRaiz.setFont(new Font("Arial", 0, 30));
 			btnRaiz.setBounds(100, 180, 90, 60);
+			btnRaiz.setBackground(new Color(235, 235, 235));
 		add(btnRaiz);
 	
 		
 		btnAlCuadrado=new JButton("x^2");
 			btnAlCuadrado.setFont(new Font("Arial", 0, 30));
 			btnAlCuadrado.setBounds(195, 180, 90, 60);
+			btnAlCuadrado.setBackground(new Color(235, 235, 235));
 		add(btnAlCuadrado);
 		
 		
 		btnUnoEntreX=new JButton("1/x");
 			btnUnoEntreX.setFont(new Font("Arial", 0, 30));
 			btnUnoEntreX.setBounds(290, 180, 90, 60);
+			btnUnoEntreX.setBackground(new Color(235, 235, 235));
 		add(btnUnoEntreX);
 		
 		
 		btnCE=new JButton("CE");
 			btnCE.setFont(new Font("Arial", 0, 30));
 			btnCE.setBounds(5, 245, 90, 60);
+			btnCE.setBackground(new Color(235, 235, 235));
 		add(btnCE);
 		
 		
 		btnC=new JButton("C");
 			btnC.setFont(new Font("Arial", 0, 30));
 			btnC.setBounds(100, 245, 90, 60);
+			btnC.setBackground(new Color(235, 235, 235));
 		add(btnC);
 	
 		
@@ -160,12 +173,14 @@ class VentanaCalculadora extends JFrame implements ActionListener {
 			btnBorrar.setFont(new Font("Arial", 0, 30));
 			btnBorrar.setBounds(195, 245, 90, 60);
 			btnBorrar.addActionListener(this);
+			btnBorrar.setBackground(new Color(235, 235, 235));
 		add(btnBorrar);
 		
 		
 		btnDividir=new JButton("/");
 			btnDividir.setFont(new Font("Arial", 0, 30));
 			btnDividir.setBounds(290, 245, 90, 60);
+			btnDividir.setBackground(new Color(235, 235, 235));
 		add(btnDividir);
 		
 		
@@ -173,6 +188,7 @@ class VentanaCalculadora extends JFrame implements ActionListener {
 			btn7.setFont(new Font("Arial", 0, 30));
 			btn7.setBounds(5, 310, 90, 60);
 			btn7.addActionListener(this);
+			btn7.setBackground(new Color(255, 255, 255));
 		add(btn7);
 		
 		
@@ -180,6 +196,7 @@ class VentanaCalculadora extends JFrame implements ActionListener {
 			btn8.setFont(new Font("Arial", 0, 30));
 			btn8.setBounds(100, 310, 90, 60);
 			btn8.addActionListener(this);
+			btn8.setBackground(new Color(255, 255, 255));
 		add(btn8);
 	
 		
@@ -187,12 +204,14 @@ class VentanaCalculadora extends JFrame implements ActionListener {
 			btn9.setFont(new Font("Arial", 0, 30));
 			btn9.setBounds(195, 310, 90, 60);
 			btn9.addActionListener(this);
+			btn9.setBackground(new Color(255, 255, 255));
 		add(btn9);
 		
 		
 		btnMultiplicar=new JButton("*");
 			btnMultiplicar.setFont(new Font("Arial", 0, 30));
 			btnMultiplicar.setBounds(290, 310, 90, 60);
+			btnMultiplicar.setBackground(new Color(235, 235, 235));
 		add(btnMultiplicar);
 		
 		
@@ -200,6 +219,7 @@ class VentanaCalculadora extends JFrame implements ActionListener {
 			btn4.setFont(new Font("Arial", 0, 30));
 			btn4.setBounds(5, 375, 90, 60);
 			btn4.addActionListener(this);
+			btn4.setBackground(new Color(255, 255, 255));
 		add(btn4);
 		
 		
@@ -207,6 +227,7 @@ class VentanaCalculadora extends JFrame implements ActionListener {
 			btn5.setFont(new Font("Arial", 0, 30));
 			btn5.setBounds(100, 375, 90, 60);
 			btn5.addActionListener(this);
+			btn5.setBackground(new Color(255, 255, 255));
 		add(btn5);
 	
 		
@@ -214,12 +235,14 @@ class VentanaCalculadora extends JFrame implements ActionListener {
 			btn6.setFont(new Font("Arial", 0, 30));
 			btn6.setBounds(195, 375, 90, 60);
 			btn6.addActionListener(this);
+			btn6.setBackground(new Color(255, 255, 255));
 		add(btn6);
 		
 		
 		btnRestar=new JButton("-");
 			btnRestar.setFont(new Font("Arial", 0, 30));
 			btnRestar.setBounds(290, 375, 90, 60);
+			btnRestar.setBackground(new Color(235, 235, 235));
 		add(btnRestar);
 		
 		
@@ -227,6 +250,7 @@ class VentanaCalculadora extends JFrame implements ActionListener {
 			btn1.setFont(new Font("Arial", 0, 30));
 			btn1.setBounds(5, 440, 90, 60);
 			btn1.addActionListener(this);
+			btn1.setBackground(new Color(255, 255, 255));
 		add(btn1);
 		
 		
@@ -234,6 +258,7 @@ class VentanaCalculadora extends JFrame implements ActionListener {
 			btn2.setFont(new Font("Arial", 0, 30));
 			btn2.setBounds(100, 440, 90, 60);
 			btn2.addActionListener(this);
+			btn2.setBackground(new Color(255, 255, 255));
 		add(btn2);
 	
 		
@@ -241,18 +266,21 @@ class VentanaCalculadora extends JFrame implements ActionListener {
 			btn3.setFont(new Font("Arial", 0, 30));
 			btn3.setBounds(195, 440, 90, 60);
 			btn3.addActionListener(this);
+			btn3.setBackground(new Color(255, 255, 255));
 		add(btn3);
 		
 		
 		btnSumar=new JButton("+");
 			btnSumar.setFont(new Font("Arial", 0, 30));
 			btnSumar.setBounds(290, 440, 90, 60);
+			btnSumar.setBackground(new Color(235, 235, 235));
 		add(btnSumar);
 		
 		
 		btnMasMenos=new JButton("±");
 			btnMasMenos.setFont(new Font("Arial", 0, 30));
 			btnMasMenos.setBounds(5, 505, 90, 60);
+			btnMasMenos.setBackground(new Color(235, 235, 235));
 		add(btnMasMenos);
 		
 		
@@ -260,6 +288,7 @@ class VentanaCalculadora extends JFrame implements ActionListener {
 			btn0.setFont(new Font("Arial", 0, 30));
 			btn0.setBounds(100, 505, 90, 60);
 			btn0.addActionListener(this);
+			btn0.setBackground(new Color(255, 255, 255));
 		add(btn0);
 	
 		
@@ -267,12 +296,14 @@ class VentanaCalculadora extends JFrame implements ActionListener {
 			btnPunto.setFont(new Font("Arial", 0, 30));
 			btnPunto.setBounds(195, 505, 90, 60);
 			btnPunto.addActionListener(this);
+			btnPunto.setBackground(new Color(235, 235, 235));
 		add(btnPunto);
 		
 		
 		btnIgual=new JButton("=");
 			btnIgual.setFont(new Font("Arial", 0, 30));
 			btnIgual.setBounds(290, 505, 90, 60);
+			btnIgual.setBackground(new Color(235, 235, 235));
 		add(btnIgual);
 	}
 
